@@ -3,7 +3,7 @@ import { houses } from "../data/houses";
 
 export const getHouses = (req: Request, res: Response) => {
   try {
-    const { name } = req.query as any;
+    const { name } = req.query;
 
     if (name !== undefined && typeof name !== "string") {
       return res
